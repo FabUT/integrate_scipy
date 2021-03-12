@@ -35,7 +35,7 @@ Nout=30
 sol = solve_ivp(fun=chimie_CO2, 
                 t_span=[t0,tf], 
                 y0=[0.2,0.2,0.2,0.2,0.2], 
-                method='RK45',
+                method='LSODA',
                 t_eval=np.geomspace(t0,tf,Nout) )
 
 
